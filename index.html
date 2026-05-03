@@ -166,7 +166,7 @@ p { color: var(--subtext); }
 .solution-step h3 { margin-bottom: 6px; font-size: 15px; }
 .solution-step p { font-size: 13px; }
 
-/* ─── FEATURES SHOWCASE (CON TUS IMÁGENES REALES) ─── */
+/* ─── FEATURES SHOWCASE ─── */
 #features { background: var(--card2); }
 .features-header { margin-bottom: 4rem; }
 .features-header h2 { margin-bottom: 0.75rem; }
@@ -221,7 +221,7 @@ footer { border-top: 1px solid var(--border); padding: 3rem clamp(1.5rem, 5vw, 5
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 
-/* ─── CORRECCIONES PARA MÓVIL (AHORA EL DASHBOARD ENCAJA PERFECTO) ─── */
+/* ─── CORRECCIONES PARA MÓVIL ─── */
 @media (max-width: 900px) {
   .hero-grid, .problem-grid, .features-showcase { grid-template-columns: 1fr; }
   .feature-image-wrapper { order: -1; aspect-ratio: 4 / 3; } 
@@ -239,11 +239,9 @@ footer { border-top: 1px solid var(--border); padding: 3rem clamp(1.5rem, 5vw, 5
   .footer-inner { flex-direction: column; text-align: center; }
   .nav-cta { display: none; }
   
-  /* Ajustes para evitar que la pantalla se desborde */
   .hero-grid { gap: 2rem; overflow-x: hidden; }
   .hero-actions { flex-direction: column; align-items: stretch; width: 100%; }
   
-  /* Arreglo específico del Dashboard Mockup para Celulares */
   .mock-dashboard { width: 100%; box-sizing: border-box; border-radius: 12px; }
   .mock-topbar { padding: 8px 12px; }
   .mock-metric { padding: 12px 10px; }
@@ -283,7 +281,6 @@ footer { border-top: 1px solid var(--border); padding: 3rem clamp(1.5rem, 5vw, 5
 
 <section id="hero">
   <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
   <div class="container">
     <div class="hero-grid">
       <div class="hero-content fade-up">
@@ -390,7 +387,7 @@ footer { border-top: 1px solid var(--border); padding: 3rem clamp(1.5rem, 5vw, 5
       <div class="feature-tabs">
         <div class="feature-tab active" onclick="switchFeature(0)">
           <div class="feature-tab-icon">📓</div>
-          <div><h3>Diario de Trading</h3><p>Registra cada operación al instante.</p></div>
+          <div><h3>Distribución Pro</h3><p>Visualiza dónde están tus mejores resultados.</p></div>
         </div>
         <div class="feature-tab" onclick="switchFeature(1)">
           <div class="feature-tab-icon" style="color: #10B981;">⚖️</div>
@@ -398,19 +395,19 @@ footer { border-top: 1px solid var(--border); padding: 3rem clamp(1.5rem, 5vw, 5
         </div>
         <div class="feature-tab" onclick="switchFeature(2)">
           <div class="feature-tab-icon" style="color: #A855F7;">📊</div>
-          <div><h3>Dashboard Avanzado</h3><p>Curva de capital y rendimiento en la nube.</p></div>
+          <div><h3>Eficiencia Operativa</h3><p>Mide qué tan bien ejecutas tu plan.</p></div>
         </div>
         <div class="feature-tab" onclick="switchFeature(3)">
           <div class="feature-tab-icon" style="color: #F59E0B;">📈</div>
-          <div><h3>Analítica Profunda</h3><p>Métricas por activo y eficiencia total.</p></div>
+          <div><h3>Rentabilidad Total</h3><p>Tu curva de crecimiento en tiempo real.</p></div>
         </div>
       </div>
 
       <div class="feature-image-wrapper">
-        <img src="Estadisticas Pro Distribucion.jpg" class="f-img active" alt="Diario">
-        <img src="Calculadora.jpg" class="f-img" alt="Calculadora">
-        <img src="Estadisticas Pro Eficiencia.jpg" class="f-img" alt="Dashboard">
-        <img src="Estadisticas Pro Rentabilidad.jpg" class="f-img" alt="Analitica">
+        <img src="img1.jpg" class="f-img active" alt="Distribución">
+        <img src="img2.jpg" class="f-img" alt="Calculadora">
+        <img src="img3.jpg" class="f-img" alt="Eficiencia">
+        <img src="img4.jpg" class="f-img" alt="Rentabilidad">
       </div>
       
     </div>
